@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run once on load to set whatever is initially selected
   changeFont()
   // Run when change detected
-  fontSelectElem.onchange = event => changeFont()
+  fontSelectElem.onchange = () => changeFont()
 
   /**
    * THEME SELECT
@@ -58,5 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run once on load to set whatever is initially selected
   changeTheme()
   // Run when change detected
-  themeSelectElem.onchange = event => changeTheme()
+  themeSelectElem.onchange = () => changeTheme()
 })
