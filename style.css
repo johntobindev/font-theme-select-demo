@@ -52,6 +52,10 @@ body.is-ubuntu {
   font-family: Ubuntu;
 }
 
+body.is-noto {
+  font-family: "Noto Serif";
+}
+
 /* Theme styles */
 body.is-light {
   background-color: #fff;

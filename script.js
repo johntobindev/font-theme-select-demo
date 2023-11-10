@@ -11,13 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     switch (selectedFont) {
       case 'roboto':
-        document.body.classList.remove('is-ubuntu')
+        document.body.classList.remove('is-ubuntu', 'is-noto')
         document.body.classList.add('is-roboto')
         break
 
       case 'ubuntu':
-        document.body.classList.remove('is-roboto')
+        document.body.classList.remove('is-roboto', 'is-noto')
         document.body.classList.add('is-ubuntu')
+        break
+
+      case 'noto':
+        document.body.classList.remove('is-roboto', 'is-ubuntu')
+        document.body.classList.add('is-noto')
         break
     }
   }
